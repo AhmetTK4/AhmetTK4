@@ -2,14 +2,13 @@ package com.example.springpojoapp.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 @Data
 @Table(name = "app_user")
-public class User {
+public class AppUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,5 +24,3 @@ public class User {
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles = new HashSet<>();
 }
-
-

@@ -1,0 +1,35 @@
+version: '3.8'
+
+networks:
+  app-network:
+
+services:
+  app:
+    build: .
+    container_name: spring-pojo-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - h2db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:h2:tcp://h2db:9092/mem:testdb
+      - SPRING_DATASOURCE_USERNAME=sa
+      - SPRING_DATASOURCE_PASSWORD=password
+      - SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.H2Dialect
+      - SPRING_H2_CONSOLE_ENABLED=true
+      - SPRING_H2_CONSOLE_PATH=/h2-console
+      - TOPSECRET=your32charactersupersecretkeyfortoken
+      - SPRINGDOC_API_DOCS_ENABLED=true
+      - SPRINGDOC_SWAGGER_UI_ENABLED=true
+    networks:
+      - app-network
+
+  h2db:
+    image: oscarfonts/h2
+    container_name: h2-database
+    ports:
+      - "9092:9092"
+    environment:
+      H2_OPTIONS: -tcp -tcpAllowOthers -ifNotExists
+    networks:
+      - app-network

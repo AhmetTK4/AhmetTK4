@@ -1,6 +1,7 @@
 package com.example.springpojoapp.service;
 
-import com.example.springpojoapp.model.User;
+
+import com.example.springpojoapp.model.AppUser;
 import com.example.springpojoapp.repository.UserRepository;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -8,6 +9,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.stream.Collectors;
 
 @Service
@@ -21,12 +23,15 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepository.findByUsername(username)
-                .orElseThrow(() -> new UsernameNotFoundException("User not found with username: " + username));
+        AppUser appUser = userRepository.findByUsername(username)
+                .orElseThrow(() -> new UsernameNotFoundException("AppUser not found with username: " + username));
 
-        return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(),
-                user.getRoles().stream()
+        return new org.springframework.security.core.userdetails.User(
+                appUser.getUsername(),
+                appUser.getPassword(),
+                appUser.getRoles() != null ? appUser.getRoles().stream()
                         .map(role -> new SimpleGrantedAuthority(role.getName()))
-                        .collect(Collectors.toList()));
+                        .collect(Collectors.toList()) : Collections.emptyList()
+        );
     }
 }
