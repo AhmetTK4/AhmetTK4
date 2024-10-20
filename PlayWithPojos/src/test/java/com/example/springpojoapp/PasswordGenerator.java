@@ -8,5 +8,6 @@ public class PasswordGenerator {
         String rawPassword = "password123";
         String encodedPassword = encoder.encode(rawPassword);
         System.out.println(encodedPassword);
+
     }
 }

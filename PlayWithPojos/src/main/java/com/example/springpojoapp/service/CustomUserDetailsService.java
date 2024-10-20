@@ -1,6 +1,5 @@
 package com.example.springpojoapp.service;
 
-
 import com.example.springpojoapp.model.AppUser;
 import com.example.springpojoapp.repository.UserRepository;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -10,6 +9,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
@@ -33,5 +33,9 @@ public class CustomUserDetailsService implements UserDetailsService {
                         .map(role -> new SimpleGrantedAuthority(role.getName()))
                         .collect(Collectors.toList()) : Collections.emptyList()
         );
+    }
+
+    public List<AppUser> getAllUsers() {
+        return userRepository.findAll(); // Tüm kullanıcıları döndüren yöntem
     }
 }

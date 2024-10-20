@@ -8,10 +8,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/books")
-public class BookController {
+public class BookApiController {
     private final BookService bookService;
 
-    public BookController(BookService bookService) {
+    public BookApiController(BookService bookService) {
         this.bookService = bookService;
     }
 
@@ -29,4 +29,6 @@ public class BookController {
     public void deleteBook(@PathVariable Long id) {
         bookService.deleteBook(id);
     }
+
+
 }
