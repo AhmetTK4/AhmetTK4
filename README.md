@@ -23,10 +23,11 @@ For more Java fundamentals and design-pattern examples, see [JavaProjects](https
 
 I focus on explaining how backend code behaves, including its assumptions and limitations:
 
-- [Spring transactional events: after commit, independent writes, and outbox writes](https://github.com/AhmetTK4/JavaEssentials/tree/main/transactional-events)
-- [Five Java Stream patterns for business scenarios](https://github.com/AhmetTK4/JavaEssentials/tree/main/stream-patterns)
+- [Spring’s @TransactionalEventListener: Why Your Code Runs but Your Data Doesn’t Save](https://medium.com/@ahmettemelkundupoglu/springs-transactionaleventlistener-why-your-code-runs-but-your-data-doesn-t-save-7d6e84710c40) — [code](https://github.com/AhmetTK4/JavaEssentials/tree/main/transactional-events)
+- [5 Practical Java Stream Patterns with Spring Boot and Java 21](https://medium.com/@ahmettemelkundupoglu/5-practical-java-stream-patterns-with-spring-boot-and-java-21-a7b6dae616b7) — [code](https://github.com/AhmetTK4/JavaEssentials/tree/main/stream-patterns)
+- [Mastering Code Coverage with JaCoCo in Java 21 and Spring Boot](https://medium.com/@ahmettemelkundupoglu/mastering-code-coverage-with-jacoco-in-java-21-and-spring-boot-7e09ee26c039) — [code](https://github.com/AhmetTK4/JavaProjects/tree/main/jacoco-demo)
 
-These links lead to code and documentation. Find my writing on [Medium](https://medium.com/@ahmettemelkundupoglu); individual article links will be connected to their examples as they become available.
+More writing on [Medium](https://medium.com/@ahmettemelkundupoglu).
 
 ## Open-source collaboration
 
