@@ -1,37 +1,45 @@
-<h1 align="left">Hey 👋 What's up?</h1>
+# Hi, I'm Ahmet Temel Kundupoğlu
 
-<p align="left">I'm Ahmet, a passionate fullstack Java developer from Turkey 🇹🇷</p>
+**Java backend developer based in Istanbul.** I build backend services and REST APIs with Java and Spring Boot, and share what I learn through practical, documented examples.
 
----
+I'm open to **backend roles, freelance projects, and open-source collaboration**.
 
-<h2 align="left">🧑‍💻 About Me</h2>
+[LinkedIn](https://www.linkedin.com/in/ahmet-temel-kundupoglu/) · [Medium](https://medium.com/@ahmettemelkundupoglu) · [Email](mailto:ahmettemelkundupoglu@gmail.com)
 
-<ul align="left">
-  <li>👋 Hi, I’m <strong>@AhmetTK4</strong></li>
-  <li>👀 I’m interested in Java, Kotlin, REST APIs, SOAP, Spring Boot, and Maven</li>
-  <li>💼 I’m open to collaboration on Java Backend and Fullstack projects</li>
-  <li>📫 Reach me at: <a href="mailto:ahmettemelkundupoglu@gmail.com">ahmettemelkundupoglu@gmail.com</a></li>
-</ul>
+## Selected projects
 
----
+### [Java Essentials](https://github.com/AhmetTK4/JavaEssentials)
+Practical Java and Spring examples with documented decisions and behavior tests. Explore [Stream-based API examples](https://github.com/AhmetTK4/JavaEssentials/tree/main/stream-patterns) and [transaction-bound events](https://github.com/AhmetTK4/JavaEssentials/tree/main/transactional-events), including commit/rollback behavior and the atomic-write portion of an outbox.
 
-<h2 align="left">🛠️ I Code With</h2>
+### [Harmony Platform](https://github.com/AhmetTK4/harmony-platform)
+A learning platform for event-driven commerce using Java, Spring Boot, RabbitMQ, service discovery, and an API gateway. The repository documents local and Docker setup, service responsibilities, and the order/payment/shipping flow. It is a learning project with simulated business flows, not a production service.
 
-<table>
-  <tr>
-    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="Java" /><br>Java</td>
-    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="40" alt="Spring" /><br>Spring</td>
-    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="VSCode" /><br>VSCode</td>
-    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" /><br>JavaScript</td>
-    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="TypeScript" /><br>TypeScript</td>
-    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" height="40" alt="Angular" /><br>Angular</td>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML5" /><br>HTML5</td>
-    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS3" /><br>CSS3</td>
-    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" height="40" alt="Grafana" /><br>Grafana</td>
-    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" height="40" alt="Apache" /><br>Apache</td>
-    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" height="40" alt="Oracle" /><br>Oracle</td>
-    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="Git" /><br>Git</td>
-  </tr>
-</table>
+### [GoShort](https://github.com/AhmetTK4/goshort)
+A URL shortener with a Go API, Redis storage, and a React interface. It demonstrates link creation, redirects, and click counts, with API request/response examples in the repository.
+
+For more Java fundamentals and design-pattern examples, see [JavaProjects](https://github.com/AhmetTK4/JavaProjects).
+
+## Technical notes and examples
+
+I focus on explaining how backend code behaves, including its assumptions and limitations:
+
+- [Spring transactional events: after commit, independent writes, and outbox writes](https://github.com/AhmetTK4/JavaEssentials/tree/main/transactional-events)
+- [Five Java Stream patterns for business scenarios](https://github.com/AhmetTK4/JavaEssentials/tree/main/stream-patterns)
+
+These links lead to code and documentation. Find my writing on [Medium](https://medium.com/@ahmettemelkundupoglu); individual article links will be connected to their examples as they become available.
+
+## Open-source collaboration
+
+Questions, reproducible bug reports, and focused improvements are welcome. Start with the README of the relevant project, and open an issue to discuss substantial changes before working on a pull request. These are learning projects; their documentation describes the intended scope and known limitations.
+
+## Work with me
+
+Interested in a **Java backend role**, a **Spring Boot / REST API project**, or an **API integration**? [Email me](mailto:ahmettemelkundupoglu@gmail.com).
+
+For project inquiries, please include the problem, your current system, the expected deliverable, and your target timeline so we can discuss the scope.
+
+## Core stack
+
+Java · Spring Boot · REST APIs · Maven / Gradle · SQL / JPA · RabbitMQ · Docker · Git
+
+Other project experience: Go · Redis · React · Kotlin.
