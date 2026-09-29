@@ -4,7 +4,7 @@
 
 I'm open to **backend roles, freelance projects, and open-source collaboration**.
 
-[Portfolio](https://ahmettk.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/ahmet-temel-kundupoglu/) · [Medium](https://medium.com/@ahmettemelkundupoglu) · [Email](mailto:ahmettemelkundupoglu@gmail.com)
+[Portfolio](https://www.ahmettemelkundupoglu.com) · [LinkedIn](https://www.linkedin.com/in/ahmet-temel-kundupoglu/) · [Medium](https://medium.com/@ahmettemelkundupoglu) · [Email](mailto:ahmettemelkundupoglu@gmail.com)
 
 ## Selected projects
 
